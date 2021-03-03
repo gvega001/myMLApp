@@ -9,12 +9,8 @@ namespace myMLApp
         {
             Console.WriteLine("Enter the comment:");
             string line;
-            while ((line = Console.ReadLine()) != null)
-            {
-                string newLine = line.Replace(("").PadRight(0, ' '), "\t");
-                Console.WriteLine(newLine);
-            }
-
+            line =  Console.ReadLine();
+        
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
